@@ -191,7 +191,7 @@ body {
 	min-width: 65px;
 }
 
-.branding a:hover {
+.nav.navbar-nav.navbar-right li a.logo:hover {
 	background: none !important;
 }
 
