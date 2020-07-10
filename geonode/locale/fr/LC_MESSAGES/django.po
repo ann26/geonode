@@ -9036,3 +9036,6 @@ msgstr "Présenté par"
 
 msgid "Web site developed by"
 msgstr "Site développé par"
+
+msgid "Show banner"
+msgstr "Montrer la bannière"
