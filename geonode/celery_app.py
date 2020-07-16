@@ -26,7 +26,7 @@ from celery import Celery
 # from celery.schedules import crontab
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'geonode.settings')
-app = Celery('geonode', include=['gwml2.tasks'])
+app = Celery('geonode')
 logger = logging.getLogger(__name__)
 
 
