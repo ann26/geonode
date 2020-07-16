@@ -486,6 +486,9 @@ INSTALLED_APPS = (
     'wagtailmenus',
 
     'modelcluster',
+
+    # Celery monitor
+    'django_celery_monitor',
 )
 
 if 'postgresql' in DATABASE_URL or 'postgis' in DATABASE_URL:

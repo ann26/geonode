@@ -26,7 +26,7 @@ from celery import Celery
 # from celery.schedules import crontab
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'geonode.settings')
-app = Celery('geonode')
+app = Celery('geonode', include=['gwml2.tasks'])
 logger = logging.getLogger(__name__)
 
 
@@ -37,7 +37,6 @@ def _log(msg, *args):
 # Using a string here means the worker will not have to
 # pickle the object when using Windows.
 app.config_from_object('django.conf:settings', namespace="CELERY")
-app.autodiscover_tasks()
 
 """ CELERAY SAMPLE TASKS
 @app.on_after_configure.connect
